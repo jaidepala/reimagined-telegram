@@ -29,8 +29,6 @@ const App = () => {
 
 		const { data } = await API.graphql( graphqlOperation( listNotes ) );
 
-		console.log('data' , data)
-
 		setNotes( data.listNotes.items );
 	};
 
